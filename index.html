@@ -1,45 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Media Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIGITAL DRIVE</title>
   <style>
     body {
-      font-family: Arial;
-      text-align: center;
-      padding: 40px;
-    }
-    video {
-      width: 80%;
-      max-width: 600px;
-    }
-    a.download {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #007BFF;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #081424, #02201c);
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      padding: 40px 10px;
     }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(0, 255, 191, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      background: #1c2a33;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .item:hover {
+      background: #253a45;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .sub {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    .badge {
+      background: #00c98d;
+      color: black;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-left: 6px;
+    }
+
+    .size {
+      font-size: 12px;
+      color: #999;
+      background: #2f3e47;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Welcome to My Media Page</h1>
+  <div class="container">
+    <h1>Drive</h1>
 
-  <!-- Option 1: Embed a YouTube video -->
-  <iframe width="560" height="315" src="https://youtu.be/8ERIVxGJAlA" 
-    title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    <a href="files/TDP-Manifesto-2024.pdf" download>
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/color/48/pdf.png" class="icon" />
+          <div class="details">
+            <div class="title">TDP Manifesto 2024 <span class="badge">PDF</span></div>
+            <div class="sub">Uploaded: Jun 24, 2025 09:37</div>
+          </div>
+        </div>
+        <div class="size">7.29 MB</div>
+      </div>
+    </a>
 
-  <!-- OR Option 2: Upload your own MP4 -->
-  <!-- 
-  <video controls>
-    <source src="video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  -->
+    <a href="files/TDP-Bonds.pdf" download>
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/color/48/pdf.png" class="icon" />
+          <div class="details">
+            <div class="title">TDP Bonds <span class="badge">PDF</span></div>
+            <div class="sub">Uploaded: Jun 25, 2025 07:45</div>
+          </div>
+        </div>
+        <div class="size">4.89 MB</div>
+      </div>
+    </a>
 
-  <h2>Download PDF</h2>
-  <a href="file.pdf" class="download" download>📄 Download PDF</a>
+    <a href="https://youtube.com" target="_blank">
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/color/48/youtube-play.png" class="icon" />
+          <div class="details">
+            <div class="title">Former CM YS Jagan Press Meet</div>
+            <div class="sub">Visit Site</div>
+          </div>
+        </div>
+      </div>
+    </a>
 
+    <a href="#">
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/color/48/video.png" class="icon" />
+          <div class="details">
+            <div class="title">CBN Bytes <span class="badge">VIDEO</span></div>
+            <div class="sub">Click to view collection</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/emoji/48/man-student.png" class="icon" />
+          <div class="details">
+            <div class="title">చంద్రబాబు మేసాల వల్ల మీకు కలిగిన నష్టం ఎంత? <span class="badge">IMAGE</span></div>
+            <div class="sub">Click to view collection</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/flat-round/48/open-book--v2.png" class="icon" />
+          <div class="details">
+            <div class="title">చంద్రబాబు ఎగొట్టిన జగన్‌నవ పథకాలు <span class="badge">IMAGE</span></div>
+            <div class="sub">Click to view collection</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://wa.me/919000000000" target="_blank">
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/color/48/whatsapp--v1.png" class="icon" />
+          <div class="details">
+            <div class="title">Whatsapp Link <span class="badge">FORM</span></div>
+            <div class="sub">Click to join</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="item">
+        <div class="left">
+          <img src="https://img.icons8.com/color/48/cloud.png" class="icon" />
+          <div class="details">
+            <div class="title">Online: చంద్రబాబు మేసాల వల్ల మీకు కలిగిన నష్టం ఎంత?</div>
+            <div class="sub">Visit Site</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
 </body>
 </html>
